@@ -11,11 +11,24 @@ header {
     text-align: center;
     margin: 0 auto;
 }
-.title {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 1.75em;
-    color: #464240;
+
+@media (min-width:481px) {
+    .title {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 2em;
+        color: #464240;
+        margin: 5px;
+    }
 }
+
+@media (max-width:480px) {
+    .title {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 1.2em;
+        color: #464240;
+    }
+}
+
 
 .title p {
     font-size: .75em;
@@ -41,6 +54,24 @@ input[type=text] {
     margin: 5px;
 }
 
+button {
+    background-color: #D0C9C4;
+    color: #464240;
+    border: 2px solid #464240;
+    border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Alata', sans-serif;
+    margin: 5px;
+
+}
+
+button:hover {
+    background-color: #FFE3E1;
+}
+
 section.meme-holder {
     background-color: #FFE3E1;
 }
@@ -60,6 +91,7 @@ img {
     height: auto;
     object-fit: cover;
     display:block;
+    border-radius: 3px;
 }
 
 .meme-text-top {
