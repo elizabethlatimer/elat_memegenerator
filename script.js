@@ -24,12 +24,17 @@ window.onload = function() {
         let image = document.createElement("img");
         image.src = imgAddress;
 
+        let exit = document.createElement("div");
+        exit.className = "exit";
+        exit.innerText = "X"
+
         memeDiv.appendChild(image);
         memeDiv.appendChild(topDiv);
         memeDiv.appendChild(bottomDiv);
+        memeDiv.appendChild(exit);
         section.appendChild(memeDiv);
 
-        memeDiv.addEventListener("click", function(){
+        exit.addEventListener("click", function(){
             memeDiv.remove();
         })
 
