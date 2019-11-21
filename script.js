@@ -29,14 +29,10 @@ window.onload = function() {
         memeDiv.appendChild(bottomDiv);
         section.appendChild(memeDiv);
 
-    })
-}
+        memeDiv.addEventListener("click", function(){
+            memeDiv.remove();
+        })
 
-// window.onload = function() {
-//     let memes = document.getElementsByClassName("meme");
-//     for (let i=0; i<memes.length; i++) {
-//         memes[i].addEventListener("click", function(){
-//             memes[i].remove;
-//         })
-//     }
-// }
+    })
+
+}
